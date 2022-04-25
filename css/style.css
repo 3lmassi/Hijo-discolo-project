@@ -4,9 +4,6 @@
     box-sizing: border-box;
 }
 
-
-/*INICIO GRIDS-AREA DE LA PAGINA PRINCIPAL*/
-
 .contenidoGral{
     display: grid; 
     width: 100%;
@@ -40,7 +37,6 @@
     background-color: #000000cb;
     color: whitesmoke;
     border: none;
-
 }
 
 .contenidoGral .cajaFooter{
@@ -52,6 +48,14 @@
     margin: 0;
 
 }
+
+
+/*INICIO GRIDS-AREA DE LA PAGINA PRINCIPAL*/
+
+@media screen and (min-width: 820px){
+    
+
+
 
 /*FIN GRIDS-AREA DE LA PAGINA PRINCIPAL*/
 
@@ -144,11 +148,14 @@
 
 /* INICIO GALERIA SECCION FOTOS */
 
+
+
 .galeria{
     height: 790px;
     width: 100%;
     display: grid;
     padding: 15px;
+    transition: all 1s;
     gap: 10px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 5fr);
@@ -165,23 +172,27 @@
     box-shadow: 0 0 10px; color: rgba(0, 0, 0, 0.904);
 }
 
+.img:hover{
+    transform: scale(1.1);
+}
+
 .img1{
     grid-area: img1;
-    background-image: url(/img/img4.png);
+    background-image: url(../img/img4.png);
     background-position: center;
     background-size: cover;    
 }
 
 .img2{
     grid-area: img2;
-    background-image: url(/img/imghd1.png);
+    background-image: url(../img/imghd1.png);
     background-position: center;
     background-size: cover; 
 }
 
 .img3{
     grid-area: img3;
-    background-image: url(/img/Foto2.jpg);
+    background-image: url(../img/Foto2.jpg);
     background-position: center;
     background-size: cover;
     
@@ -189,7 +200,7 @@
 
 .img4{
     grid-area: img4;
-    background-image: url(/img/Foto3.png);
+    background-image: url(../img/Foto3.png);
     background-position: center;
     background-size: cover;
     
@@ -198,23 +209,241 @@
 
 .img5{
     grid-area: img5;
-    background-image: url(/img/imghd2.png);
+    background-image: url(../img/imghd2.png);
     background-position: center;
     background-size: cover;
 }
 
 .img6{
     grid-area: img6;
-    background-image: url(/img/imghd3.png);
+    background-image: url(../img/imghd3.png);
     background-position: center;
     background-size: cover;
 }
 
 .img7{
     grid-area: img7;
-    background-image: url(/img/Foto1.jpg);
+    background-image: url(../img/Foto1.jpg);
     background-position: center;
     background-size: cover;
 }
 
+}
 /* FINAL GALERIA SECCION FOTOS */
+
+/*formulario flex*/
+
+.cajaFormulario{
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.cajaFormulario .formulario{
+    border-radius: 15px;
+    padding: 30px;
+    background-color: #000000;
+}
+
+/*FIN RESPONSIVE TABLET Y PC*/
+
+/*INICIO RESPONSIVE MOBILE*/
+
+
+@media screen and (max-width: 820px) {
+
+    .contenidoGral .cajaCentrada{
+        grid-area: main;
+        margin: 0 auto;
+        width: 100%;
+        padding: 100px 50px;
+        background-color: #000000cb;
+        color: whitesmoke;
+        border: none;
+        
+    
+    }
+    .contenidoGral .logoEncabezado .logo{
+        height: 155px;
+        width: auto;
+        text-align: center;
+    
+    }
+    
+    .navMenu{
+        background-color: #141313bd;
+        width: 100%;
+        text-align: center;
+        font-size: 15px;
+        padding: 10px;
+        border-color:#DCDCDC;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        
+    }
+    
+    
+    .navMenu ul li{
+        display: inline;
+        margin: 0px 0px;
+
+        
+    }
+    
+    .navMenu ul li a{
+        padding: 0px 5px;
+        text-decoration: none;
+        color: #fffef8;
+    }
+    
+    .navMenu li a:hover{
+        color: #ffe600 ;
+        box-shadow: 0px 5px 0px #ffe600;
+    }
+    
+    /*FIN DE BARRA NAVEGADORA*/
+    
+    
+    /*INICIO DEL MAIN INDEX*/
+
+    .cajaCentrada .videosRecientes{
+        text-align: center;
+    
+    }
+
+    .cajaCentrada .videosRecientes iframe{
+        width: 300px;
+        height: auto;
+        
+    }
+    
+    
+    .cajaCentrada .centrarPresent{
+        text-align: center;
+        
+        
+    }
+    
+    .centrarPresent h2{
+        text-align: center;
+        padding: 20px;
+        font-size: 30px;
+        color: #9b9898;
+    
+    }
+    
+
+    .cajaCentrada .centrarPresent .imgMain img{
+        width: 200px;
+        height: auto;
+    }
+        
+    /*Fin main de index*/
+    
+    .centrarPresent .mapShow{
+        text-align: center;
+    }
+    
+    .centrarPresent h3{
+        text-align: center;
+        font-size: 40px;
+    }
+    
+    /*Footer*/
+    
+    .cajaFooter h3{
+        font-size: 25px;
+        color: #ffe600;
+    }
+    
+    
+    /* INICIO GALERIA SECCION FOTOS */
+    
+    .galeria{
+        height: 790px;
+        width: 100%;
+        display: grid;
+        padding: 15px;
+        transition: all 2s;
+        gap: 10px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 5fr);
+        grid-template-areas:    
+                            "img1 img2 img2 img3"
+                            "img1 img2 img2 img4"                     
+                            "img1 img5 img6 img7";
+
+    }
+    
+    
+    
+    .img{
+        border-radius: 15px;
+        box-shadow: 0 0 10px; color: rgba(0, 0, 0, 0.904);
+    }
+    
+    
+    .img1{
+        grid-area: img1;
+        background-image: url(../img/img4.png);
+        background-position: center;
+        background-size: cover;    
+    }
+    
+    .img2{
+        grid-area: img2;
+        background-image: url(../img/imghd1.png);
+        background-position: center;
+        background-size: cover; 
+    }
+    
+    .img3{
+        grid-area: img3;
+        background-image: url(../img/Foto2.jpg);
+        background-position: center;
+        background-size: cover;
+        
+    }
+    
+    .img4{
+        grid-area: img4;
+        background-image: url(../img/Foto3.png);
+        background-position: center;
+        background-size: cover;
+        
+        
+    }
+    
+    .img5{
+        grid-area: img5;
+        background-image: url(../img/imghd2.png);
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .img6{
+        grid-area: img6;
+        background-image: url(../img/imghd3.png);
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .img7{
+        grid-area: img7;
+        background-image: url(../img/Foto1.jpg);
+        background-position: center;
+        background-size: cover;
+    
+}
+
+/*SECCION MUSICA RESPONSIVE MOBILE*/
+
+.cajaCentrada .centrarPresent iframe{
+    text-align: center;
+    width: 100%;
+}
+
+}
