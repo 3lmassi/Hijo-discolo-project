@@ -1,0 +1,94 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+
+.fondoPagina{
+    font-family: Verdana, Tahoma, sans-serif;
+    background-color: #bdb8b8;
+}
+
+
+
+.logoEncabezado{
+    height: 200px;
+    width: 100%;
+    background-image: url(../img/imagenencabezado.png);
+    background-size: cover;
+    background-position: center ;
+    background-repeat: no-repeat;
+    position: fixed;
+}
+
+.logo{
+    height: 100px;
+    width: auto;
+    padding: 0 ;
+    margin-top: 0px ;
+
+}
+
+.navMenu{
+    background: black;
+    height: 40px;
+    width: 100%;
+    list-style: none;
+    padding: 10px;
+    margin:60px 0 0 0 ;
+    text-align: right;
+
+}
+
+.navMenu ul li{
+    display: inline;
+    background-color: black;
+    margin: 0px 0px;
+    box-shadow: 0px 2px 0px rgb(255, 230, 0);
+}
+
+.navMenu li a{
+    padding: 0px 20px;
+    text-decoration: none;
+    color: #bdb8b8;
+}
+
+.navMenu li a:hover{
+    box-shadow: 0px 5px 0px rgb(255, 230, 0);
+}
+
+
+
+.cajaCentrada{
+    margin: 0 auto;
+    width: 80%;
+    padding: 250px 50px;
+    background-color: #000000cb;
+    color: whitesmoke;
+    border: none;
+
+    
+}
+
+.centrarPresent{
+    padding: 20px 50px 20px 50px;
+}
+
+.centrarPresent h2{
+    padding: 20px 50px 20px 50px;
+    text-align: center;
+
+
+}
+
+.centerPresent h2 img{
+    text-align: center;
+}
+
+
+.cajaFooter{
+    background-color: #000000;
+    color: #f5f5f5;
+    text-align: center;
+    padding: 30px;
+    margin: 0;
+}
