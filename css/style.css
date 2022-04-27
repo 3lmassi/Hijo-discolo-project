@@ -70,10 +70,11 @@
 
 .navMenu{
     background-color: #141313bd;
+    height: 40px;
     width: 100%;
+    padding: 5px;
     text-align: right;
     font-size: 20px;
-    padding: 10px;
     border-color:#DCDCDC;
     font-weight: bold;
 }
@@ -127,6 +128,20 @@
     padding: 25px;
 }
     
+
+
+#carouselExampleIndicators .carousel-inner{
+    justify-items: center;
+    height: auto;
+    width: 100%;
+
+
+}
+
+
+
+
+
 /*Fin main de index*/
 
 .centrarPresent .mapShow{
@@ -140,10 +155,29 @@
 
 /*Footer*/
 
-.cajaFooter h3{
-    font-size: 25px;
-    color: #ffe600;
-}
+
+
+    
+    
+    /*.contenidoGral .cajaFooter .contacto .iconos{
+        padding: 30px;
+        height: 300px;
+        width: 200px;
+        
+    }
+
+    .contenidoGral .cajaFooter .contacto .iconos a{
+        padding: 50px;
+        font-size: 34px;
+        width: 100%;
+        color: #9b9898;
+        text-align: center;
+    }*/
+
+    .cajaFooter h3{
+        font-size: 25px;
+        color: #ffe600;
+    }
 
 
 /* INICIO GALERIA SECCION FOTOS */
@@ -228,7 +262,7 @@
     background-size: cover;
 }
 
-}
+
 /* FINAL GALERIA SECCION FOTOS */
 
 /*formulario flex*/
@@ -247,6 +281,40 @@
     background-color: #000000;
 }
 
+
+/*-----------------------------------------------SECCION NOTICIAS------------------------------------------------------*/
+
+.noticias{
+display: flex;
+width: 100%;
+padding: 10px;
+}
+
+.noticias .card {
+    margin: 15px;
+    padding: 10px;
+    width: 500px;
+    background-color: #0e0d0d63;
+    border-radius: 15px;
+    box-shadow: 0 0 10px; color: rgba(0, 0, 0, 0.904);
+    
+}
+
+.card img{
+    height: 200px;
+    width: auto;
+    border-radius: 10px;
+}
+.card .card-body h5{
+    font-size: 20px;
+    color: #ffe600;
+}
+
+.card .card-body p{
+    color:#9b9898;
+}
+
+} 
 /*FIN RESPONSIVE TABLET Y PC*/
 
 /*INICIO RESPONSIVE MOBILE*/
@@ -354,10 +422,6 @@
     
     /*Footer*/
     
-    .cajaFooter h3{
-        font-size: 25px;
-        color: #ffe600;
-    }
     
     
     /* INICIO GALERIA SECCION FOTOS */
@@ -445,5 +509,38 @@
     text-align: center;
     width: 100%;
 }
+
+/*-----------------------------------------------SECCION NOTICIAS------------------------------------------------------*/
+
+.noticias{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    padding: 10px;
+    }
+    
+    .noticias .card {
+        margin: 15px;
+        padding: 10px;
+        width: 500px;
+        background-color: #0e0d0d63;
+        border-radius: 15px;
+        box-shadow: 0 0 10px; color: rgba(0, 0, 0, 0.904);
+        
+    }
+    
+    .card img{
+        height: 200px;
+        width: auto;
+        border-radius: 10px;
+    }
+    .card .card-body h5{
+        font-size: 20px;
+        color: #ffe600;
+    }
+    
+    .card .card-body p{
+        color:#9b9898;
+    }
 
 }
