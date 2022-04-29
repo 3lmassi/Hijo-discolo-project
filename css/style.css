@@ -89,6 +89,7 @@ body{
         padding: 0px 20px;
         text-decoration: none;
         color: #fffef8;
+        
     }
 
     .navMenu li a:hover{
@@ -107,6 +108,9 @@ body{
         text-align: center;
     }
 
+    .cajaCentrada .videosRecientes iframe{
+        width:100%;
+        height: 600px;}
 
     .cajaCentrada .centrarPresent{
         padding: 0;
