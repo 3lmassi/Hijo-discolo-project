@@ -43,61 +43,37 @@
 
 
             <div class=" cajaFormulario">
-                <div class="formulario">
-                    <h3>Formulario de contacto</h3>
-                    <label for="Nombre">Nombre</label>
-                    <input type="text" id="Nombre" placeholder="Ingrese su nombre">
-                    <br>
-            
-    
-                    <label for="Apellido">Apellido</label>
-                    <input type="text" id="Apellido" placeholder="Ingrese su apellido">
-                    <br>
-    
-                    <label for="Apellido">E-mail</label>
-                    <input type="text" id="" placeholder="Ingrese su E-mail">
-                    <br>
-    
-                    <label for="Pais de residencia">Pais de residencia</label>
-                    <select name="Pais de residencia" id="Pais de residencia">
-                    <option value="0">Selecciona el Pais</option>
-                    <option value="1">Argentina</option>
-                    <option value="2">Brasil</option>
-                    <option value="3">Colombia</option>
-                    <option value="4">Ecuador</option>
-                    <option value="5">Peru</option>
-                    <option value="6">Uruguay</option>
-                    <option value="7">Bolivia</option>
-                    <option value="8">Paraguay</option>
-                    </select>
-                <br> 
-    
-                <label for="Fecha de nacimiento">Fecha de nacimiento</label>
-                <input type="date" id="Fecha de nacimiento">
-                <br>
-    
-                <label for="Experiencia">¿Experiencia en la mùsica?</label>
-                <input type="radio" name="Experiencia">Nada
-                <input type="radio" name="Experiencia">Algo
-                <input type="radio" name="Experiencia">Mucho
-                <br>
-    
-                <h3> Expectativas personales </h3>
-                    <label for="Multi">
-                    </label>
-                    <textarea name="Multi" id="Multi" cols="50" rows="10"></textarea>
-    
-                <h3>Terminos y condiciones</h3>
-                <input type="checkbox" name="term" id="Terminos y condiciones"> He leido terminos y condiciones
-    
-    
-                <input type="reset" value="Restaurar">
-                <input type="submit" value="Enviar">
-                </div>
+                <div class="container">
+                    <form action="action_page.php">
                 
-
-            </div>
-        </nav>
+                    <label for="fname">Nombre</label>
+                    <input type="text" id="fname" name="Nombre" placeholder="Nombre completo">
+                
+                    <label for="lname">Apellido</label>
+                    <input type="text" id="lname" name="Apellido" placeholder="E-mail">
+                
+                    <label for="country">Nacionalidad</label>
+                    <select id="country" name="country">
+                        <option value="Argentina">Argentina</option>
+                        <option value="Bolivia">Bolivia</option>
+                        <option value="Brasil">Brasil</option>
+                        <option value="Chile">Chile</option>
+                        <option value="Colombia">Colombia</option>
+                        <option value="Paraguay">Paraguay</option>
+                        <option value="Perú">Perú</option>
+                        <option value="Uruguay">Uruguay</option>
+                        <option value="Venezuela">Venezuela</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Contame tu proyecto..." style="height:200px"></textarea>
+                
+                    <input type="submit" value="Enviar">
+                
+                    </form>
+                </div>
+        
     </main>
 
 

@@ -6,8 +6,8 @@
 
 
 body{
-    background: linear-gradient(to bottom, black, rgb(255, 255, 255));
-    
+    background-color: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23424404' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%2389860B'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
 }
 .contenidoGral{
     display: grid; 
@@ -31,6 +31,7 @@ body{
     background-size: cover;
     background-position: center ;
     background-repeat: no-repeat;
+    
 }
 
 .contenidoGral .cajaCentrada{
@@ -40,6 +41,7 @@ body{
     padding: 100px 50px;
     color: whitesmoke;
     border: none;
+    
 }
 
 .contenidoGral .cajaFooter{
@@ -102,7 +104,14 @@ body{
 
 /*---------------------------------------------------------------------- MAIN GRAL RESPONSIVE DESKTOP-----------------------------------------------------------------------*/
 
-
+    .cajaPrincipal{
+        
+        background-color:#000000 ;
+        margin: 0;
+        padding: 0;
+        
+        
+    }
 
     .videosRecientes{
         text-align: center;
@@ -114,6 +123,14 @@ body{
 
     .cajaCentrada .centrarPresent{
         padding: 0;
+        margin: 0;
+    }
+
+    .centrarPresent p{
+        color: #9b9898;
+        margin: 10px;
+        padding: 15px;
+        text-align: center;
     }
 
     .centrarPresent h2{
@@ -148,7 +165,7 @@ body{
     }
 
 
-/*---------------------------------------------------------------------- PAGINA RESPONSIVE DESKTOP --------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------- PAGINA footer DESKTOP --------------------------------------------------------------------------*/
 
 
 
@@ -263,13 +280,14 @@ body{
 /*---------------------------------------------------------------------- PAGINA ¿QUIEN SOY? --------------------------------------------------------------------------*/
     .card.bg-dark{
         margin-bottom: 100px;
-        border-radius: 15px;
+        
     }
 
 
     .card.bg-dark img{
         border-radius: 15px;
-        height: 600px;
+        height: auto;
+        width: 100%;
         opacity: .6;
     }
 
@@ -296,6 +314,38 @@ body{
     }
 
 
+    input[type=text], select, textarea {
+        width: 100%; 
+        padding: 12px; 
+        border: 1px solid #ccc; 
+        border-radius: 4px; 
+        box-sizing: border-box; 
+        margin-top: 6px; 
+        margin-bottom: 16px; 
+        resize: vertical 
+        }
+
+
+    input[type=submit] {
+        background-color: #d1d408;
+        color: rgb(0, 0, 0);
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+
+    input[type=submit]:hover {
+        background-color: #45a049;
+    }
+
+
+    .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+    }
 /*-----------------------------------------------SECCION NOTICIAS------------------------------------------------------*/
 
 
@@ -313,6 +363,18 @@ body{
         border-radius: 15px;
         box-shadow: 0 0 10px; color: rgba(0, 0, 0, 0.904);
     
+    }
+
+    .btn-primary {
+        color: rgb(0, 0, 0);
+        background-color: #ffe600;
+        border-color: #000000;
+    }
+
+    .btn-primary:hover{
+        color: #000000;
+        background-color: #9b9898;
+        border-color: #9b9898;
     }
 
     .card img{
@@ -341,16 +403,15 @@ body{
 
 @media screen and (max-width: 820px) {
 
+
+
     .contenidoGral .cajaCentrada{
         grid-area: main;
         margin: 0 auto;
         width: 100%;
         padding: 100px 50px;
-        background: linear-gradient(to bottom, black, rgb(255, 255, 255));
         color: whitesmoke;
         border: none;
-        
-    
     }
     .contenidoGral .logoEncabezado .logo{
         height: 155px;
@@ -395,6 +456,12 @@ body{
     
     
     /*INICIO DEL MAIN INDEX*/
+    .cajaPrincipal{
+        margin: 0;
+        padding: 0;
+        
+        
+    }
 
     .cajaCentrada .videosRecientes{
         text-align: center;
@@ -475,7 +542,7 @@ body{
         padding-bottom:30px ;
     }
 
-    
+
     
     /* INICIO GALERIA SECCION FOTOS */
     
@@ -487,11 +554,12 @@ body{
         transition: all 2s;
         gap: 10px;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(3, 5fr);
-        grid-template-areas:    
-                            "img1 img2 img2 img3"
-                            "img1 img2 img2 img4"                     
-                            "img1 img5 img6 img7";
+        grid-template-rows: repeat(4, 5fr);
+        grid-template-areas: 
+                            "img4 img4 img4 img4"
+                            "img1 img1 img3 img3"
+                            "img1 img1 img2 img2"                     
+                            "img6 img6 img6 img6";
 
     }
     
@@ -513,7 +581,7 @@ body{
     .img2{
         grid-area: img2;
         background-image: url(../img/imghd1.png);
-        background-position: center;
+        background-position: right;
         background-size: cover; 
     }
     
@@ -565,6 +633,18 @@ body{
 
 /*-----------------------------------------------SECCION NOTICIAS------------------------------------------------------*/
 
+    .btn-primary {
+        color: rgb(0, 0, 0);
+        background-color: #ffe600;
+        border-color: #000000;
+    }
+    
+    .btn-primary:hover{
+        color: #000000;
+        background-color: #9b9898;
+        border-color: #9b9898;
+    }
+
     .noticias{
         display: flex;
         flex-flow: row wrap;
@@ -596,6 +676,40 @@ body{
         color:#9b9898;
     }
 
+    /*-----------------------------------------------SECCION CONTACTO------------------------------------------------------*/
+
+    input[type=text], select, textarea {
+        width: 100%; 
+        padding: 12px; 
+        border: 1px solid #ccc; 
+        border-radius: 4px; 
+        box-sizing: border-box; 
+        margin-top: 6px; 
+        margin-bottom: 16px; 
+        resize: vertical 
+        }
+
+
+    input[type=submit] {
+        background-color: #d1d408;
+        color: rgb(0, 0, 0);
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+
+    input[type=submit]:hover {
+        background-color: #9b9898;
+    }
+
+
+    .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+    }
 }
 
 
