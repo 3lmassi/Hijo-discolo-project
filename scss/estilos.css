@@ -1,0 +1,48 @@
+.cajaFooter .contacto {
+  color: #f5f4ec;
+  margin: 20px;
+}
+
+.cajaFooter .contacto a {
+  color: #f5f4ec;
+  padding: 5px 10px;
+}
+
+.cajaFooter .contacto h3 {
+  font-size: 25px;
+  color: #ffe600;
+  padding-bottom: 30px;
+}
+
+.cajaFooter .contacto svg {
+  margin-bottom: 15px;
+}
+
+.navMenu {
+  background-color: #141313bd;
+  height: 40px;
+  width: 100%;
+  padding: 5px;
+  text-align: right;
+  font-size: 20px;
+  border-color: #DCDCDC;
+  font-weight: bold;
+}
+
+.navMenu ul li {
+  display: inline;
+  margin: 0 0;
+}
+
+.navMenu ul li a {
+  padding: 0 20px;
+  text-decoration: none;
+  color: #fffef8;
+}
+
+.navMenu ul li a:hover {
+  color: #ffe600;
+  -webkit-box-shadow: 0 5px 0 #ffe600;
+          box-shadow: 0 5px 0 #ffe600;
+}
+/*# sourceMappingURL=estilos.css.map */
