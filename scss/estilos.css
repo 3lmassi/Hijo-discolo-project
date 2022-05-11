@@ -1,21 +1,25 @@
 .cajaFooter .contacto {
-  color: #f5f4ec;
+  color: #fffef8;
   margin: 20px;
 }
 
 .cajaFooter .contacto a {
-  color: #f5f4ec;
+  color: #fffef8;
   padding: 5px 10px;
+}
+
+.cajaFooter .contacto a svg {
+  margin-bottom: 30px;
+}
+
+.cajaFooter .contacto a:hover {
+  color: #ffe600;
 }
 
 .cajaFooter .contacto h3 {
   font-size: 25px;
   color: #ffe600;
   padding-bottom: 30px;
-}
-
-.cajaFooter .contacto svg {
-  margin-bottom: 15px;
 }
 
 .navMenu {
@@ -25,7 +29,7 @@
   padding: 5px;
   text-align: right;
   font-size: 20px;
-  border-color: #DCDCDC;
+  border-color: #fffef8;
   font-weight: bold;
 }
 

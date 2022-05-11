@@ -1,0 +1,30 @@
+.cajaFooter {
+
+    .contacto{
+        color: $blancos;
+        margin: 20px;
+
+        a{
+            color: $blancos;
+            padding: 5px 10px;
+
+            svg{
+                margin-bottom: 30px;
+            }
+
+            &:hover{
+                color: $amarillo;
+            }
+        }
+
+        h3{
+            font-size: 25px;
+            color: $amarillo;
+            padding-bottom: 30px;
+        }
+
+        
+
+        
+    }
+}
