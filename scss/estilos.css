@@ -1,27 +1,3 @@
-.cajaFooter .contacto {
-  color: #fffef8;
-  margin: 20px;
-}
-
-.cajaFooter .contacto a {
-  color: #fffef8;
-  padding: 5px 10px;
-}
-
-.cajaFooter .contacto a svg {
-  margin-bottom: 30px;
-}
-
-.cajaFooter .contacto a:hover {
-  color: #ffe600;
-}
-
-.cajaFooter .contacto h3 {
-  font-size: 25px;
-  color: #ffe600;
-  padding-bottom: 30px;
-}
-
 .navMenu {
   background-color: #141313bd;
   height: 40px;
@@ -48,5 +24,29 @@
   color: #ffe600;
   -webkit-box-shadow: 0 5px 0 #ffe600;
           box-shadow: 0 5px 0 #ffe600;
+}
+
+.cajaFooter .contacto {
+  color: #fffef8;
+  margin: 20px;
+}
+
+.cajaFooter .contacto a {
+  color: #fffef8;
+  padding: 5px 10px;
+}
+
+.cajaFooter .contacto a svg {
+  margin-bottom: 30px;
+}
+
+.cajaFooter .contacto a:hover {
+  color: #ffe600;
+}
+
+.cajaFooter .contacto h3 {
+  font-size: 25px;
+  color: #ffe600;
+  padding-bottom: 30px;
 }
 /*# sourceMappingURL=estilos.css.map */

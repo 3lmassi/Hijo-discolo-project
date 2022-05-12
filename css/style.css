@@ -201,10 +201,29 @@ body{
 
 
 /*---------------------------------------------------------------------- GALERIA FOTOS DESKTOP --------------------------------------------------------------------------*/
+    .galeriaIndex{
+        height: 790px;
+        width: 100%;
+        display: grid;
+        padding: 15px;
+        transition: all 1s;
+        gap: 10px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 5fr);
+        grid-template-areas:    
+                            "img1 img12 img12 img11"
+                            "img1 img12 img12 img3"                     
+                            "img1 img4 img10 img7";
+    }
 
+    .img1{
+        grid-area: img1;
+        background-image: url(../img/img4.png);
+        background-position: center;
+        background-size: cover;    
+    }
 
-
-    .galeria{
+    .galeria1{
         height: 790px;
         width: 100%;
         display: grid;
@@ -254,7 +273,7 @@ body{
 
     .img4{
         grid-area: img4;
-        background-image: url(../img/Foto3.png);
+        background-image: url(../img/hijo\ discolo\ noticia\ 3.jpg);
         background-position: center;
         background-size: cover;
     }
@@ -279,6 +298,76 @@ body{
         background-position: center;
         background-size: cover;
     }
+
+    .galeria2{
+        height: 790px;
+        width: 100%;
+        display: grid;
+        padding: 15px;
+        transition: all 1s;
+        gap: 10px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 5fr);
+        grid-template-areas:    
+                            "img8 img8 img10 img10"
+                            "img8 img8 img10 img10"                     
+                            "img9 img11 img12 img13";
+    }
+    
+    
+    .img{
+            border-radius: 15px;
+            box-shadow: 0 0 10px; color: rgba(0, 0, 0, 0.904);
+        }
+    
+        .img:hover{
+            transform: scale(1.1);
+        }
+    
+    
+        .img8{
+            grid-area: img8;
+            background-image: url(../img/hd\ amaneciente.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+    
+        .img9{
+            grid-area: img9;
+            background-image: url(../img/hd\ entreerrados.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+    
+        .img10{
+            grid-area: img10;
+            background-image: url(../img/ratman\ hd.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+    
+        .img11{
+            grid-area: img11;
+            background-image: url(../img/hijo\ discolo\ comienzos.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+    
+        .img12{
+            grid-area: img12;
+            background-image: url(../img/hijo\ discolo\ carnet.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+    
+        .img13{
+            grid-area: img13;
+            background-image: url(../img/hd\ fin\ foto\ carnet.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+
 /*---------------------------------------------------------------------- PAGINA ¿QUIEN SOY? --------------------------------------------------------------------------*/
     .card.bg-dark{
         margin-bottom: 100px;
@@ -542,12 +631,81 @@ body{
 
     
     /* INICIO GALERIA SECCION FOTOS */
-    
-    .galeria{
+
+    .galeria2{
         height: 790px;
         width: 100%;
         display: grid;
         padding: 15px;
+        transition: all 2s;
+        gap: 10px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 5fr);
+        grid-template-areas:    
+                            "img12 img12 img12 img12"
+                            "img12 img12 img12 img12"                     
+                            "img11 img11 img10 img10";
+    }
+    
+    
+    .img{
+            border-radius: 15px;
+            box-shadow: 0 0 10px; color: rgba(0, 0, 0, 0.904);
+        }
+    
+        .img:hover{
+            transform: scale(1.1);
+        }
+    
+    
+        .img8{
+            grid-area: img8;
+            background-image: url(../img/hd\ amaneciente.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+    
+        .img9{
+            grid-area: img9;
+            background-image: url(../img/hd\ entreerrados.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+    
+        .img10{
+            grid-area: img10;
+            background-image: url(../img/ratman\ hd.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+    
+        .img11{
+            grid-area: img11;
+            background-image: url(../img/hijo\ discolo\ comienzos.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+    
+        .img12{
+            grid-area: img12;
+            background-image: url(../img/hijo\ discolo\ carnet.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+    
+        .img13{
+            grid-area: img13;
+            background-image: url(../img/hd\ fin\ foto\ carnet.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+    
+    .galeria1{
+        height: 790px;
+        width: 100%;
+        display: grid;
+        padding: 15px;
+        margin-bottom: 5px;
         transition: all 2s;
         gap: 10px;
         grid-template-columns: repeat(4, 1fr);
