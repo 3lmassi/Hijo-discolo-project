@@ -4,7 +4,6 @@
     }
 
 .navMenu{
-    background-color: $negrodifuminado;
     @include size(40px, 100%);
     padding: 5px;
     text-align: right;
@@ -21,12 +20,17 @@
                 padding: 0 20px;
                 text-decoration: none;
                 color: $blancos;
+                text-shadow: 0 0 #0a0a0a, 1px 1px #0a0a0a,2px 2px #0a0a0a, 3px 3px #0a0a0a;
             }
 
             a:hover{
                 color: $amarillo;
-                box-shadow: 0 5px 0 $amarillo;
+                transition: 0.5s;
+                text-shadow: 0 0 #0a0a0a, 1px 1px #0a0a0a, 2px 2px #0a0a0a, 3px 3px #0a0a0a, 4px 4px #0a0a0a, 5px 5px #0a0a0a;
+                
+                
             }
         }
     }
 }
+

@@ -2,7 +2,7 @@
 
     .contacto{
         color: $blancos;
-        margin: 20px;
+        margin: 10px;
 
         a{
             color: $blancos;
@@ -17,10 +17,15 @@
             }
         }
 
-        h3{
+    h3{
             font-size: 25px;
             color: $amarillo;
             padding-bottom: 30px;
+            text-decoration: none;
+
+            &:hover{
+                
+            }
         }
 
         
