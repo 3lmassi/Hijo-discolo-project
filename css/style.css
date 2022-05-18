@@ -544,7 +544,7 @@ body{
 /*---------------------------------------------------------------------------------------------------- PAGINA RESPONSIVE MOBILE --------------------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------------------- PAGINA RESPONSIVE MOBILE --------------------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------------------- PAGINA RESPONSIVE MOBILE --------------------------------------------------------------------------*/
-@media screen and (max-width: 968px) {
+@media screen and (max-width: 1020px) {
 
     .cajaPrincipal{
         background-color:#000000cc ;
@@ -565,15 +565,16 @@ body{
     
     .enlaceLogo{
         position: absolute;
-        padding: 125px 15px;
+        padding: 136px 10px;
     }
 
     .logo{
-        height: 85px;
+        height: 65px;
     }
 
     .checkbtn{
         display: block;
+        margin-right: 15px;
     }
 
     ul{
@@ -639,6 +640,9 @@ body{
         
     }
     
+    .centrarPresent p{
+        padding: 10px;
+    }
     .centrarPresent h1{
         display: block;
         clear: both;
@@ -903,7 +907,7 @@ body{
     /*-----------------------------------------------SECCION CONTACTO------------------------------------------------------*/
 
     .cajaFormulario{
-        padding: 100px 80px;
+        padding: 80px 20px;
         display: flex;
         justify-content: center;
     }
