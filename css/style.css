@@ -38,7 +38,8 @@ body{
     background-size: cover;
     background-position: center center ;
     background-repeat: no-repeat;
-    
+    text-decoration: none;
+    list-style: none;
 }
 
 .contenidoGral .cajaCentrada{
@@ -85,14 +86,20 @@ body{
         height: 100px;
     }
 
+    .logo:hover{
+        transform: scale(1.1);
+    }
+
     nav ul{
         float: right;
         margin-right: 20px;
     }
 
     nav ul li{
+        text-decoration: none;
+        list-style: none;
         display: inline-block;
-        line-height: 350px;
+        line-height: 340px;
         margin: 0 5px;
     }
 
@@ -109,14 +116,15 @@ body{
         color:#ffe600 ;
         transition: 0.5s;
         text-shadow: 0 0 #0a0a0a, 1px 1px #0a0a0a, 2px 2px #0a0a0a, 3px 3px #0a0a0a, 4px 4px #0a0a0a, 5px 5px #0a0a0a;
+        text-decoration: none;
     }
 
     .checkbtn{
         font-size: 40px;
         color: #fff;
         text-shadow: 1px 2px #000;
-        float: right;
-        line-height: 350px;
+        float:right;
+        line-height: 340px;
         margin-right: 40px;
         cursor: pointer;
         display: none;
@@ -515,6 +523,13 @@ body{
         transition: 0.5s;
         text-shadow: 0 0 #0a0a0a, 1px 1px #0a0a0a, 2px 2px #0a0a0a, 3px 3px #0a0a0a, 4px 4px #0a0a0a, 5px 5px #0a0a0a;
         
+    }
+
+    .checkbtn:hover{
+        color:#ffe600 ;
+        transition: 0.5s;
+        text-shadow: 0 0 #0a0a0a, 1px 1px #0a0a0a, 2px 2px #0a0a0a, 3px 3px #0a0a0a, 4px 4px #0a0a0a, 5px 5px #0a0a0a;
+        text-decoration: none;
     }
 
     #check:checked ~ ul{
