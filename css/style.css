@@ -1,6 +1,8 @@
 *{
     margin:0;
     padding: 0;
+    text-decoration: none;
+    list-style: none;
     box-sizing: border-box;
 }
 
@@ -34,7 +36,7 @@ body{
     width: 100%;
     background-image: url(../img/imagenencabezado.png);
     background-size: cover;
-    background-position: center ;
+    background-position: center center ;
     background-repeat: no-repeat;
     
 }
@@ -67,18 +69,65 @@ body{
 
 
 /*---------------------------------------------------------------------- LOGO - MENU NAVEGABLE RESPONSIVE DESKTOP -----------------------------------------------------------*/
-@media screen and (min-width: 820px){
 
-    .contenidoGral .logoEncabezado .logo{
-        height: 155px;
-        width: auto;
-        text-align: center;
+
+    nav{
+        height: 200px;
+        width: 100%;
     }
 
+    .enlaceLogo{
+        position: absolute;
+        padding: 110px 5px;
+    }
 
+    .logo{
+        height: 100px;
+    }
+
+    nav ul{
+        float: right;
+        margin-right: 20px;
+    }
+
+    nav ul li{
+        display: inline-block;
+        line-height: 350px;
+        margin: 0 5px;
+    }
+
+    nav ul li a{
+        font-size: 24px;
+        padding: 10px 10px;
+        border-radius: 5px;
+        text-decoration: none;
+        color: #fffef8;
+        text-shadow: 0 0 #0a0a0a, 1px 1px #0a0a0a,2px 2px #0a0a0a, 3px 3px #0a0a0a;
+    }
+
+    nav ul li a:hover{
+        color:#ffe600 ;
+        transition: 0.5s;
+        text-shadow: 0 0 #0a0a0a, 1px 1px #0a0a0a, 2px 2px #0a0a0a, 3px 3px #0a0a0a, 4px 4px #0a0a0a, 5px 5px #0a0a0a;
+    }
+
+    .checkbtn{
+        font-size: 40px;
+        color: #fff;
+        text-shadow: 1px 2px #000;
+        float: right;
+        line-height: 350px;
+        margin-right: 40px;
+        cursor: pointer;
+        display: none;
+    }
+
+    #check{
+        display: none;
+    }
 
 /*---------------------------------------------------------------------- MAIN GRAL RESPONSIVE DESKTOP-----------------------------------------------------------------------*/
-
+@media screen and (min-width: 820px){
     .cajaPrincipal{
         
         background-color:#000000cc ;
@@ -434,43 +483,47 @@ body{
         color: whitesmoke;
         border: none;
     }
-    .contenidoGral .logoEncabezado .logo{
-        height: 155px;
-        width: auto;
-        text-align: center;
     
+    .checkbtn{
+        display: block;
     }
-    
-    .navMenu{
-        width: 100%;
-        text-align: center;
-        font-size: 15px;
-        padding: 10px;
-        border-color:#DCDCDC;
-        font-weight: bold;
-        display: flex;
-        justify-content: center;
-        
-    }
-    
-    
-    .navMenu ul li{
-        display: inline;
-        margin: 0px 0px;
 
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(to bottom, #181815, #474929, #7e7f3b, #bbba4d, #fff75e);
+        top: 200px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a{
+        font-size: 22px;
+
+    }
+
+    li a:hover{
+        color: #d1d408;
+        transition: 0.5s;
+        text-shadow: 0 0 #0a0a0a, 1px 1px #0a0a0a, 2px 2px #0a0a0a, 3px 3px #0a0a0a, 4px 4px #0a0a0a, 5px 5px #0a0a0a;
         
     }
-    
-    .navMenu ul li a{
-        padding: 0px 5px;
-        text-decoration: none;
-        color: #fffef8;
+
+    #check:checked ~ ul{
+        left: 0;
+        z-index: 1;
     }
     
-    .navMenu li a:hover{
-        color: #ffe600 ;
-        
-    }
+
+    
     
     /*FIN DE BARRA NAVEGADORA*/
     

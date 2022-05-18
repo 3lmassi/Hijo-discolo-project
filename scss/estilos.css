@@ -1,35 +1,6 @@
-.navMenu {
-  height: 40px;
-  width: 100%;
-  padding: 5px;
-  text-align: right;
-  font-size: 20px;
-  border-color: #fffef8;
-  font-weight: bold;
-}
-
-.navMenu ul li {
-  display: inline;
-  margin: 0 0;
-}
-
-.navMenu ul li a {
-  padding: 0 20px;
-  text-decoration: none;
-  color: #fffef8;
-  text-shadow: 0 0 #0a0a0a, 1px 1px #0a0a0a,2px 2px #0a0a0a, 3px 3px #0a0a0a;
-}
-
-.navMenu ul li a:hover {
-  color: #ffe600;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  text-shadow: 0 0 #0a0a0a, 1px 1px #0a0a0a, 2px 2px #0a0a0a, 3px 3px #0a0a0a, 4px 4px #0a0a0a, 5px 5px #0a0a0a;
-}
-
 .cajaFooter .contacto {
   color: #fffef8;
-  margin: 10px;
+  margin: 20px;
 }
 
 .cajaFooter .contacto a {
@@ -49,6 +20,5 @@
   font-size: 25px;
   color: #ffe600;
   padding-bottom: 30px;
-  text-decoration: none;
 }
 /*# sourceMappingURL=estilos.css.map */
