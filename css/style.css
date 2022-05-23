@@ -433,7 +433,7 @@ body{
         background-image: radial-gradient(circle, #2a2a28, #222120, #191818, #100f0f, #000000);
         padding: 20px;
     }
-/*--------------------------------------------------------------------------------------------------------------SECCION NOTICIAS------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------SECCION NOTICIAS------------------------------------------------------*/
 
 
     .noticias{
@@ -587,7 +587,6 @@ body{
     }
 
 
-
     .contenidoGral .cajaCentrada{
         grid-area: main;
         margin: 0 auto;
@@ -654,7 +653,7 @@ body{
     
     
     
-    /*------------------------------------------------------------------------------------------------INICIO DEL MAIN INDEX-----------------------------------------------------------------------------------*/
+    /*----------------------------------------------------------INICIO DEL MAIN INDEX-----------------------------------------------------------------------------------*/
 
     
     
@@ -782,8 +781,7 @@ body{
         height: 790px;
         width: 100%;
         display: grid;
-        padding-top: 15px;
-        padding-left: 20px;
+        padding: 0 0 10px 20px;
         transition: all 2s;
         gap: 10px;
         grid-template-columns: repeat(4, 1fr);
@@ -854,8 +852,7 @@ body{
         height: 790px;
         width: 100%;
         display: grid;
-        padding-top: 15px;
-        padding-left: 20px;
+        padding: 15px 0px 10px 20px;
         transition: all 2s;
         gap: 10px;
         grid-template-columns: repeat(4, 1fr);
