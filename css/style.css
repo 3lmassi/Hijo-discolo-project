@@ -40,13 +40,16 @@ body{
     background-repeat: no-repeat;
     text-decoration: none;
     list-style: none;
+    position: fixed;
+    z-index: 1;
+    box-shadow: 2px 2px 1px #000, 4px 4px 8px #000;
 }
 
 .contenidoGral .cajaCentrada{
     grid-area: main;
     margin: 0 auto;
     width: 80%;
-    padding: 100px 50px;
+    padding: 250px 50px 100px 50px;
     color: whitesmoke;
     border: none;
     
@@ -71,14 +74,15 @@ body{
 /*---------------------------------------------------------------------- LOGO - MENU NAVEGABLE RESPONSIVE -----------------------------------------------------------*/
 
 
-    nav{
+    .cajaNav{
         height: 200px;
         width: 100%;
+        
     }
 
     .enlaceLogo{
-        position: absolute;
-        padding: 120px 15px;
+        position:absolute;
+        padding: 120px 20px;
     }
 
     .logo{
@@ -137,8 +141,9 @@ body{
 /*---------------------------------------------------------------------- PAGINA RESPONSIVE DESKTOP --------------------------------------------------------------------------*/
 /*---------------------------------------------------------------------- PAGINA RESPONSIVE DESKTOP --------------------------------------------------------------------------*/
 /*---------------------------------------------------------------------- PAGINA RESPONSIVE DESKTOP --------------------------------------------------------------------------*/
+/*
+@media screen and (min-width: 968px){*/
 
-@media screen and (min-width: 968px){
     .cajaPrincipal{
         
         background-color:#000000cc ;
@@ -477,22 +482,51 @@ body{
         color:#9b9898;
     }
 
-
     .centrarPresent .mapShow{
         padding: 25px;
         text-align: center;
     }
 
-}
-/*---------------------------------------------------------------------- PAGINA RESPONSIVE tablet --------------------------------------------------------------------------*/
-/*---------------------------------------------------------------------- PAGINA RESPONSIVE tablet --------------------------------------------------------------------------*/
-/*---------------------------------------------------------------------- PAGINA RESPONSIVE tablet --------------------------------------------------------------------------*/
+/*---------------------------------------------------------------- PAGINA RESPONSIVE tablet ------------------------------------------------------------------------*/    
+    .cajaFooter .contacto {
+        color: #fffef8;
+        margin: 20px;
+    }
+    .cajaFooter .contacto a {
+        color: #fffef8;
+        padding: 5px 10px;
+    }
+    .cajaFooter .contacto a svg {
+        margin-bottom: 30px;
+    }
+    .cajaFooter .contacto a:hover {
+        color: #ffe600;
+    }
+    .cajaFooter .contacto h3 {
+        font-size: 25px;
+        color: #ffe600;
+        padding-bottom: 30px;
+    }
+    .cajaFooter .contacto h4 {
+        padding-top: 20px;
+        font-size: 15px;
+        font-style: italic;
+    }
+    .cajaFooter .contacto h4 span {
+        color: #ffe600;
+    }
+
+/*----------------------------------------------------------- PAGINA RESPONSIVE tablet --------------------------------------------------------------------------*/
+/*----------------------------------------------------------- PAGINA RESPONSIVE tablet --------------------------------------------------------------------------*/
+/*----------------------------------------------------------- PAGINA RESPONSIVE tablet --------------------------------------------------------------------------*/
+
+
 @media screen and (max-width:1380px){
     .contenidoGral .cajaCentrada{
         grid-area: main;
         margin: 0 auto;
         width: 100%;
-        padding: 30px 20px;
+        padding: 250px 50px 20px 50px ;
         color: whitesmoke;
         border: none;
     }
@@ -558,7 +592,7 @@ body{
         grid-area: main;
         margin: 0 auto;
         width: 100%;
-        padding: 30px 20px;
+        padding: 250px 20px 100px 20px;
         color: whitesmoke;
         border: none;
     }
@@ -622,6 +656,9 @@ body{
     
     /*------------------------------------------------------------------------------------------------INICIO DEL MAIN INDEX-----------------------------------------------------------------------------------*/
 
+    
+    
+    
     .cajaCentrada .videosRecientes{
         text-align: center;
     
@@ -632,7 +669,6 @@ body{
         height: 300px;
         
     }
-    
     
     .cajaCentrada .centrarPresent{
         text-align: center;
@@ -682,17 +718,17 @@ body{
     }
     
 
-
-    /*Fin main de index*/
+    .centrarPresent h3{
+        text-align: center;
+        font-size: 40px;
+    }
+    /*--------------------------------------------------------------------------------------------------iframe del mapa---------------------------------------------------------------------*/
     
     .centrarPresent .mapShow{
         text-align: center;
     }
     
-    .centrarPresent h3{
-        text-align: center;
-        font-size: 40px;
-    }
+    
     
     /*Footer*/
     
