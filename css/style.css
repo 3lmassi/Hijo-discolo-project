@@ -28,6 +28,7 @@ body{
                         "footer footer footer footer";
 }
 
+
 /*---------------------------------------------------------------------- GRIDS AREAS DE LA PAGINA-----------------------------------------------------------------------*/
 
 .contenidoGral .logoEncabezado{
@@ -248,7 +249,7 @@ body{
         width: 100%;
         display: grid;
         padding: 15px;
-        transition: all 1s;
+        transition: all 10s;
         gap: 10px;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(3, 5fr);
@@ -324,7 +325,7 @@ body{
         width: 100%;
         display: grid;
         padding: 15px;
-        transition: all 1s;
+        transition: all 10s;
         gap: 10px;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(3, 5fr);
@@ -338,6 +339,7 @@ body{
     .img{
             border-radius: 15px;
             box-shadow: 0 0 10px; color: rgba(0, 0, 0, 0.904);
+            
         }
     
         .img:hover{
